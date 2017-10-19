@@ -32,7 +32,7 @@ WORKDIR /tmp/
 ADD app /tmp/app
 
 #ディレクトリのリネーム
-RUN mv app /var/www/html
+RUN mv app/* /var/www/html
 
 #ディレクトリの権限変更
 RUN chown -R apache:apache /var/www/html/
