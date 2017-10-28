@@ -4,7 +4,7 @@
 
     $watson_json_env = getenv('WATSON_VR');
     $watson_json_decoded = json_decode($watson_json_env,true);
-    $url=$watson_json_decoded["url"]."/v3/classify?api_key=".$watson_json_decoded["api_key"]."&url=https://raw.githubusercontent.com/phssakaigawa/tsukiji-container/master/app/sushi-1958247_640.jpg&version=2017-10-19";
+    $url=$watson_json_decoded["url"]."/v3/classify?api_key=".$watson_json_decoded["api_key"]."&url=https://raw.githubusercontent.com/phssakaigawa/tsukiji-container/master/app/sushi-1958247_640.jpg";
     $ch = curl_init($url);
     echo("---------");
     
